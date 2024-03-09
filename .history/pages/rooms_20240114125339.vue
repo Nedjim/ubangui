@@ -1,0 +1,31 @@
+<script setup lang="ts">
+const rooms_paragraph_1 =
+  "Toutes les chambres ont la même dimension (24 m2).";
+  const rooms_paragraph_2 = "Les plafonds en voûte sont élevés, ce qui favorise une bonne aération et le maintien des chambres dans une fraîcheur agréable durant une bonne partie de la journée.";
+  const rooms_paragraph_3 = "Les chambres sont appelées des « Maisons ». Chaque chambre ou « Maison » a une couleur spécifique. Ainsi nous avons « La  Maison blanche », « La Maison bleue », « La Maison rouge » et « La Maison jaune ».";
+  const rooms_paragraph_4 = "Elles sont équipées de climatiseurs, chauffe-eau, frigos-bar,  et ont des dispositifs  pour téléviseurs, wifi, etc.";
+  const rooms_paragraph_5 = "Les prix des chambres varient en fonction du nombre  d’occupants :";
+</script>
+
+<template>
+  <div class="rooms-wrapper">
+    <PageTitle title="Chambres" />
+    <div class="content">
+      <p>{{ rooms_paragraph_1 }}</p>
+      <p>{{ rooms_paragraph_2 }}</p>
+      <p>{{ rooms_paragraph_3 }}</p>
+      <p>{{ rooms_paragraph_4 }}</p>
+      <p>{{ rooms_paragraph_5 }}</p>
+    </div>
+  </div>
+</template>
+
+<style scoped lang="scss">
+.rooms-wrapper {
+  padding: 30px 80px;
+
+  .content {
+    margin: 40px 0;
+  }
+}
+</style>

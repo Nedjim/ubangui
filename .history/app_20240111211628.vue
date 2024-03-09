@@ -1,0 +1,29 @@
+<script setup lang="ts">
+useHead({
+  title: "Residence Ubangui",
+  meta: [{ name: "Residence Ubangui", content: "Sénégal" }],
+  bodyAttrs: {
+    class: "test",
+  },
+  script: [{ innerHTML: "console.log('Hello world')" }],
+});
+</script>
+<template>
+  <div>
+    <Header />
+    <Separator />
+    <NuxtPage />
+    <Footer />
+  </div>
+</template>
+
+<style lang="scss">
+body {
+  font-family: Lato,sans-serif;
+  margin: 0;
+
+  h2 {
+    font-weight: 300;
+  }
+}
+</style>
